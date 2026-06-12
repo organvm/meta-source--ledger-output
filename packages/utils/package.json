@@ -21,6 +21,6 @@
     "@meta-source/core": "workspace:*"
   },
   "devDependencies": {
-    "typescript": "^5.3.0"
+    "typescript": "^6.0.3"
   }
 }
