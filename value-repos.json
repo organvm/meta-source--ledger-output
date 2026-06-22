@@ -1,0 +1,13 @@
+{
+  "schema": "value-repos/v1",
+  "description": "Repos with discovered latent value, promoted into the ranked build-out tier.",
+  "repos": [
+    {
+      "repo": "organvm/meta-source--ledger-output",
+      "promoted": "2026-06-22",
+      "thesis": "Framework-agnostic cipher engine (Caesar/Atbash/Vigenère/Enigma state machines + pluggable visual-metaphor renderers) atop a deterministic generative substrate (@meta-source/utils: seeded PRNG, golden-ratio math, numerology). Reusable for cryptography education, CTF tooling, and generative-art seeding; foundation for Phase-5 on-chain pulse().",
+      "first_task": "Extract the cipher engine into a headless @meta-source/cipher-engine workspace package with vitest coverage.",
+      "discovery": "DISCOVERY.md"
+    }
+  ]
+}

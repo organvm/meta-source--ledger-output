@@ -115,7 +115,7 @@ function StratumPlane({ stratum }: { stratum: typeof STRATA[number] }) {
   );
 }
 
-function getLensPosition(lens: typeof LENSES[number], index: number): [number, number, number] {
+function getLensPosition(lens: typeof LENSES[number]): [number, number, number] {
   const stratum = getStratumByPath(lens.stratum);
   const y = stratum?.yPosition ?? 0;
   // Spread lenses horizontally within their stratum
@@ -129,8 +129,8 @@ function getLensPosition(lens: typeof LENSES[number], index: number): [number, n
 function HierarchyContent() {
   const lensPositions = useMemo(() => {
     const positions: Record<string, [number, number, number]> = {};
-    LENSES.forEach((lens, i) => {
-      positions[lens.id] = getLensPosition(lens, i);
+    LENSES.forEach((lens) => {
+      positions[lens.id] = getLensPosition(lens);
     });
     return positions;
   }, []);
