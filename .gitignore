@@ -24,3 +24,6 @@ __pycache__/
 # Build outputs
 dist/
 .turbo/
+
+# removed inadvertently-committed local session artifacts (PII containment)
+docs/source-threads/chatgpt-cyberpoetry-matrix-cascade.md
